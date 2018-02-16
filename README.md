@@ -1,5 +1,3 @@
-# Part-Time Parliament
+Please view this repo on [gitbooks](https://ethanfrey.gitbooks.io/part-time-parliament/content/).
 
-Welcome to the discussion....
-
-* [Consensus Algorithms](Consensus.md)
+Or just go to [SUMMARY.md](SUMMARY.md) to see the table of contents.
