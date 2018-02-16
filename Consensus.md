@@ -11,12 +11,12 @@ may send false messages, especially sending different messages
 to different recipients.
 
 Leslie Lamport first formalized this issue in his 1982 paper,
-[The Byzantine Generals Problem](./consensus/the-byzantine-generals-problem82.pdf), which is the source of
+[The Byzantine Generals Problem]({{book.root}}/consensus/the-byzantine-generals-problem82.pdf), which is the source of
 the name BFT and the theoretical basis for this area of
 research.
 
 Following up on this paper, came the FLP Impossibility Theorum,
-or ["Impossibility of Distributed Consensus with One Faulty Process"](./consensus/flp85.pdf). This argued that with an
+or ["Impossibility of Distributed Consensus with One Faulty Process"]({{book.root}}/consensus/flp85.pdf). This argued that with an
 **asynchronous** network with arbitrary delays and no timeouts,
 it is impossible to securely get consensus in the presence of
 one Byzantine process. Since then, almost all BFT research
@@ -24,7 +24,7 @@ assumes synchronicity, using an upper-bound on message delay
 in order to avoid the FLP impossibility.
 (Here is a [nice summary of the paper](http://the-paper-trail.org/blog/a-brief-tour-of-flp-impossibility/))
 
-Ben-Or responded with a paper on ["Complete Asynchronous Agreement Protocols"](./consensus/free-choice83.pdf), where he
+Ben-Or responded with a paper on ["Complete Asynchronous Agreement Protocols"]({{book.root}}/consensus/free-choice83.pdf), where he
 demonstrates a solution for asynchronous communication by
 introducing an element of non-determinism, by probabalistically
 sending a response. This avoids an external scheduler from being
@@ -38,7 +38,7 @@ but not much research until the blockchain era.
 
 ### PBFT
 
-["Practical Byzantine Fault Tolerance"](./consensus/pbft99.pdf)
+["Practical Byzantine Fault Tolerance"]({{book.root}}/consensus/pbft99.pdf)
 was the first paper that presented a BFT algorithm that was
 reasonable to implement in production systems. This is a
 synchronous algorithm, relatively fast, and requires
@@ -58,9 +58,9 @@ Jae Kwon rediscovered much BFT research and realized he could
 adapt it to a blockchain setting. The batching of transactions
 into blocks allowed nice efficiency gains and this was a
 practical setting where BFT would actually be worth the effort
-to implement. Jae Kwon the [proposed the use of BFT for blockchains](./consensus/tendermint-kwon14.pdf) in 2014.
+to implement. Jae Kwon the [proposed the use of BFT for blockchains]({{book.root}}/consensus/tendermint-kwon14.pdf) in 2014.
 Shortly afterwards, he worked with Ethan Buchmann to
-[formally specify the protocol](./consensus/tendermint-buchmann16.pdf),
+[formally specify the protocol]({{book.root}}/consensus/tendermint-buchmann16.pdf),
 which evolved to be rather similar to
 the PBFT paper, but with some important adaptions and
 optimizations for this use-case.
@@ -70,7 +70,7 @@ in golang that is approaching the 1.0 production release.
 
 ### Honeybadger
 
-Honeybadger is the name of [an interesting BFT algorithm](./consensus/honeybadger16.pdf)
+Honeybadger is the name of [an interesting BFT algorithm]({{book.root}}/consensus/honeybadger16.pdf)
 from Andrew Miller, also designed for the blockchain.
 However, it aims for asynchronous network model
 by adding non-determinism into the heart of the consensus

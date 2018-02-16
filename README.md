@@ -1,3 +1,8 @@
-Please view this repo on [gitbooks](https://ethanfrey.gitbooks.io/part-time-parliament/content/).
+# Part-Time Parliament
 
-Or just go to [SUMMARY.md](SUMMARY.md) to see the table of contents.
+This is a curated repository containing information related to
+developing decentralized technology, mainly focused on blockchain
+technology, but other aspects of p2p and cryptography that enable
+decentralized applications and infrastructure are welcome.
+
+Please view this repo on [gitbooks](https://ethanfrey.gitbooks.io/part-time-parliament/content/).
